@@ -1,18 +1,17 @@
 {
-    "manifest_version":3,
-    "name":"Numpad Arrow Keys",
-    "version":"1.0",
-    "description":"re-enable numpad as arrow keys feature in chrome",
-    "permissions":["activeTab"],
+    "manifest_version": 3,
+    "name": "Numpad Arrow Keys",
+    "version": "1.0",
+    "description": "re-enable numpad as arrow keys feature in chrome",
+    "permissions": ["activeTab"],
     "action": {
-	    "default_icon": "icon.png",
-	    "default_popup": "popup.html"
-              },
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
             "js": ["contentScript.js"]
         }
     ]
-
 }
